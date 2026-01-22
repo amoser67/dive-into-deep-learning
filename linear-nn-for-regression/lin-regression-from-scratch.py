@@ -111,7 +111,7 @@ with torch.no_grad():
     print(f'error in estimating w: {data.w - model.w.reshape(data.w.shape)}')
     print(f'error in estimating b: {data.b - model.b}')
 
+print(data)
 # error in estimating w: tensor([ 0.1047, -0.1969])
 # error in estimating b: tensor([0.2140])
 
-d2l.plt.show()
