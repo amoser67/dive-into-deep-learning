@@ -97,6 +97,13 @@ to avoid overfitting. However, you would still get diminishing returns and incre
 5. Plot the estimation error for w_hat - w and b_hat - b as a function of the amount of data.
 Hint: increase the amount of data logarithmically rather than linearly, i.e., 5, 10, 20, 50, …, 10,000
 rather than 1000, 2000, …, 10,000.
+
+    We get diminishing returns pretty quickly.
+    
+Why is the hint appropriate?
+
+    We want the amount of data to increase as a ratio of the previous values, since we need large
+    relative increases to identify trends despite the diminishing returns.
 """
 
 data_size_arr = [5, 10, 20, 50, 100, 200, 500, 1000, 2000, 4000, 8000, 10_000]
