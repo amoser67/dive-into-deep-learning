@@ -35,6 +35,11 @@ class Data(d2l.DataModule):
 def l2_penalty(w):
     return (w ** 2).sum() / 2
 
+
+def l1_penalty(w):
+    return torch.sum(torch.abs(w))
+
+
 """
 Experiment with the value of lambda in the estimation problem in this section.
 Plot training and validation accuracy as a function of lambda. 
